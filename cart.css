@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cart-items {
+    flex: 3;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.item-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.remove-item {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.cart-summary {
+    flex: 1;
+    background: white;
+    padding: 10px 15px; /* Reduced padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 250px;
+    margin-left: 20px; /* Add spacing from items */
+    /* Explicitly setting a height to keep it compact */
+    height: auto; /* Allows the card to grow based on content, but ensures it's not too tall */
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+    font-size: 16px; /* Smaller heading size */
+}
+
+.cart-summary p {
+    font-size: 14px;
+    margin: 5px 0; /* Reduced margins */
+}
+
+.checkout {
+    background: #ffa500;
+    border: none;
+    color: white;
+    padding: 8px; /* Reduced padding for a smaller button */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size for a more compact button */
+    width: 100%; /* Full-width button */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .cart-items, .cart-summary {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cart-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

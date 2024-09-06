@@ -1,0 +1,153 @@
+/* Reset some default styling */
+body, h1, span, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.order-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.order-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-quantity {
+    font-size: 14px;
+}
+
+.order-summary {
+    text-align: right;
+}
+
+.order-status {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.order-total {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-products {
+        flex-direction: column;
+    }
+
+    .product img {
+        width: 80px;
+    }
+
+    .order-summary {
+        text-align: left;
+    }
+}
